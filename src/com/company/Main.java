@@ -3,6 +3,7 @@ package com.company;
 import java.time.LocalDate;
 
 public class Main {
+
     public static int chekLeapOrNot(int year) {
         boolean leap = (year >= 1584) && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
         if (leap) {
@@ -27,7 +28,6 @@ public class Main {
         } else {
             System.out.println("Установите приложение для Android по ссылке");
         }
-
         return currentYear;
     }
 
@@ -63,6 +63,5 @@ public class Main {
         } else {
             System.out.println("Свыше 100 км доставки нет");
         }
-
     }
 }
