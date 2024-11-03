@@ -3,7 +3,8 @@ package com.company;
 import java.time.LocalDate;
 
 public class Main {
-    public static int chekLeapOrNot(int year) {
+
+    public static int checkLeapOrNot(int year) {
         boolean leap = (year >= 1584) && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
         if (leap) {
             System.out.println(year + " год - високосный год");
@@ -27,7 +28,6 @@ public class Main {
         } else {
             System.out.println("Установите приложение для Android по ссылке");
         }
-
         return currentYear;
     }
 
@@ -49,7 +49,7 @@ public class Main {
         // task 1
         System.out.println("task 1");
         int year = 2096;
-        chekLeapOrNot(year);
+        checkLeapOrNot(year);
         // task 2
         System.out.println("Task 2");
         int clientOS = 1;
@@ -63,6 +63,5 @@ public class Main {
         } else {
             System.out.println("Свыше 100 км доставки нет");
         }
-
     }
 }
